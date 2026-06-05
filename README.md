@@ -5,7 +5,7 @@ A full-stack project management dashboard built to track Software Development Li
 
 Instead of traditional passwords, this app uses a highly secure, passwordless **Email OTP (One-Time Password)** flow. It features strict Role-Based Access Control (RBAC), providing entirely different UI experiences and permissions depending on whether the user is a Project Manager or an Employee.
 
-## 🚀 Features
+## Features
 
 * **Passwordless Authentication:** Secure login via 6-digit email OTPs using JSON Web Tokens (JWT).
 * **Role-Based Routing:** Protected React routes that automatically redirect users based on database clearance.
@@ -13,7 +13,7 @@ Instead of traditional passwords, this app uses a highly secure, passwordless **
 * **Employee Workspace:** A focused, restricted dashboard where employees can only see and update tasks assigned specifically to them.
 * **RESTful API:** Protected Node/Express endpoints using custom middleware to verify JWTs and user roles.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend:** React (Vite), Tailwind CSS v4, React Router DOM, Axios, Lucide React (Icons).
 * **Backend:** Node.js, Express.js.
@@ -22,7 +22,7 @@ Instead of traditional passwords, this app uses a highly secure, passwordless **
 
 ---
 
-## 💻 Local Development Setup
+## Local Development Setup
 
 To run this project locally, you will need two terminal windows—one for the backend server and one for the frontend React app.
 
@@ -67,7 +67,7 @@ Bash
 npm run dev
 The frontend will be available at http://localhost:5173.
 
-👑 Seeding the Database (How to test Manager features)
+## Seeding the Database (How to test Manager features)
 Because the application is locked down, new users who sign up via email are automatically assigned the default employee role. There is no public UI to sign up as a manager.
 
 To test the Manager Dashboard and drag-and-drop Kanban board, you must manually promote your first user via your database:
@@ -86,5 +86,5 @@ Go back to the React app, Logout, and log back in. The routing engine will detec
 
 Once you are a Manager, you can log in with a second email address in an incognito window to create an Employee account. You can then use the Manager Dashboard to assign tasks to that employee.
 
-📝 License
+## License
 This project is open-source and available under the MIT License. Feel free to use it for your portfolio or resume.
